@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://mogamigit.github.io/goya',
-  base: './',
+  base: '/goya',
   integrations: [tailwind(), relativeLinks(), react()]
 });
