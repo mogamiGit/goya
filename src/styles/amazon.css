@@ -1,0 +1,14 @@
+@import 'global.css';
+
+html {
+    font-family: 'Roboto', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    animation: ease-in;
+    animation-duration: 1000ms;
+}
+
+body {
+    @apply bg-amazon-bg;
+    @apply text-white
+}
+

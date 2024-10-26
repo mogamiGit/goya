@@ -1,0 +1,14 @@
+---
+interface Props {
+    textButton: string;
+    linkProject: string;
+}
+
+const { textButton, linkProject } = Astro.props;
+---
+
+<a href={linkProject} target="_blank">
+    <button type="button" dir={linkProject} class="text-white bg-gradient-to-b from-amazon-light-gray to-amazon-gray font-medium px-4 py-2 text-center rounded-lg shadow-glow">
+        {textButton}
+    </button>
+</a>
