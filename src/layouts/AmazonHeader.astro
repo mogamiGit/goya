@@ -1,8 +1,9 @@
 ---
+import { Icon } from 'astro-icon/components';
 import ButtonGradient from "../components/ButtonGradient.astro";
-
-import { Image } from 'astro:assets'
 import LogoPrimeVideo from '../assets/logo-primevideo.png';
+import PrimeMark from '../assets/prime_mark.png';
+import UserImage from '../assets/user_image.png';
 ---
 
 <header id="header" class="sticky-menu w-full">
@@ -10,12 +11,11 @@ import LogoPrimeVideo from '../assets/logo-primevideo.png';
     <div class="w-full flex my-auto gap-5 justify-between py-1">
       <div id="desplegable-menu" class="flex h-full gap-3 lg:hidden">
         <p>Menú</p>
-        <img src="/images/icons/arrow_icon.svg" alt="" />
+        <Icon name="arrow_icon" />
       </div>
       <div class="flex h-full gap-8">
-        <div id="logo-desktop" class="flex h-full">
+        <div id="logo" class="flex h-full">
           <img src={LogoPrimeVideo.src} alt="Logo Prime Video"/>
-          <Image src={LogoPrimeVideo} alt="Logo Prime Video image" />
         </div>
         <div id="menu" class="h-full gap-8 hidden lg:flex">
           <ButtonGradient textButton="Inicio" linkProject="" />
@@ -24,20 +24,20 @@ import LogoPrimeVideo from '../assets/logo-primevideo.png';
           <a href="">Deportes</a>
           <a href="">TV en directo</a>
           <p>|</p>
-          <img src="/images/prime_mark.png" alt="" />
+          <img src={PrimeMark.src} alt="Prime mark"/>
           <div class="flex gap-2">
-            <img src="/images/icons/suscription_icon.svg" alt="" />
+            <Icon name="suscription_icon" />
             <p>Suscripciones</p>
           </div>
         </div>
       </div>
       <div class="flex h-full gap-8">
-        <img src="/images/icons/magnifying-glass_icon.svg" alt="" />
+        <Icon name="magnifying-glass_icon" />
         <div id="options" class="hidden h-full gap-8 lg:flex">
-          <img src="/images/icons/bullet-list_icon.svg" alt="" />
-          <img src="/images/icons/bookmark_icon.svg" alt="" />
+          <Icon name="bullet-list_icon" />
+          <Icon name="bookmark_icon" />
         </div>
-        <img src="/images/user_image.png" alt="" />
+        <img src={UserImage.src} alt="Prime mark"/>
       </div>
     </div>
   </nav>
